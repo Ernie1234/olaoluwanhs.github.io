@@ -266,7 +266,7 @@ body::-webkit-scrollbar{
     width: 60%;
     height: 90%;
     color: white;
-    font-family: lemonada light, sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 150%;
     font-weight: 100;
     line-height: 1.5em;
@@ -286,7 +286,7 @@ body::-webkit-scrollbar{
     width: 30%;
     height: 90%;
     color: white;
-    font-family: lemonada light, sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
     line-height: 1.5em;
     font-size: 100%;
     font-weight: 100;
