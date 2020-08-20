@@ -799,7 +799,7 @@ transform: translateX(-100vw)
         width: 100%;
       }
       .navbar>nav>.site-identity{
-        font-size: 110%;
+        font-size: 100%;
       }
       .navbar>nav>.nav-links{
         justify-content: space-evenly;
