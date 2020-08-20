@@ -725,12 +725,15 @@ transform: translateX(-100vw)
         height: 50%;
         /* justify-content: flex-start; */
         text-align: justify;
+        line-height: 400%;
     }
     .bio>.small-bio{
         width: 90%;
         height: 30%;
         justify-content: center;
         text-align: justify;
+        line-height: 250%;
+
     }
     .bio>.small-bio>.bio-pic{
         display: none;
@@ -823,9 +826,11 @@ transform: translateX(-100vw)
     }
     .bio>.big-bio{
         font-size: 100%;
+        line-height: 200%
     }
     .bio>.small-bio{
         height: 40%;
+        line-height: 250%;
     }
 
     .container{
