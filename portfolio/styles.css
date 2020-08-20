@@ -800,6 +800,7 @@ transform: translateX(-100vw)
       }
       .navbar>nav>.site-identity{
         font-size: 100%;
+        letter-spacing: 0.05em;
       }
       .navbar>nav>.nav-links{
         justify-content: space-evenly;
