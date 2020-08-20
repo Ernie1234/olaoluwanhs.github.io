@@ -1,13 +1,8 @@
 /* Color scheme in dark mode */
-.colors{
 
-    color: linear-gradient(to bottom right, rgb(255, 74, 119), rgb(255, 212, 229)231), rgb(255, 142, 160));
-}
 
 /* General clear fix styling */
-html{
-    /* background: linear-gradient(rgb(30, 13, 78), rgb(16, 54, 170), rgb(1, 19, 71)); */
-}
+
 
 body{
     margin: 0;
@@ -83,7 +78,7 @@ body::-webkit-scrollbar{
     /* links styling */
     font-size: 120%;
     font-family: Arial, Helvetica, sans-serif;
-    /* flex-shrink: initial; */
+    padding: 0;
 }
 
 .navbar>nav>.nav-links>li{
@@ -447,8 +442,7 @@ body::-webkit-scrollbar{
     display: none;
 }
 
-.option{
-    
+.option{    
     overflow: hidden;
     height: 40vh;
     width: 20vw;
@@ -802,7 +796,7 @@ transform: translateX(-100vw)
     }
     .navbar>nav{
         justify-content: center;
-        width: 80%;
+        width: 100%;
       }
       .navbar>nav>.site-identity{
         font-size: 110%;
@@ -810,7 +804,8 @@ transform: translateX(-100vw)
       .navbar>nav>.nav-links{
         justify-content: space-evenly;
         font-size: 90%;
-        width: 80vw;
+        width: 80%;
+        align-items: center;
       }
       .landing>.my-name{
         font-size: 400%;
@@ -842,10 +837,10 @@ transform: translateX(-100vw)
         width: 15em;
     }
     .Slider-container{
-        height: 40vh;
+        height: 30vh;
     }
     .indiv-text{
-        font-size: 1em;
+        font-size: 0.5em;
     }
     .course-info{
         width: 100%;
