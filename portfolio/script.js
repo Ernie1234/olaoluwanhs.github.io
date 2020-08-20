@@ -233,7 +233,7 @@ navLinks[3].addEventListener("click", function(){
         scrollToPos(3240);  
     }
     else if(docElement.clientWidth<=768){
-        scrollToPos(4619);  
+        scrollToPos(4119);  
     }
 })
 
