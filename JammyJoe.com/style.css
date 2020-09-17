@@ -1,0 +1,422 @@
+/* Image slider styling */
+.image-slider {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.image-slider:nth-child(1) {
+  /* background-color: rgb(21, 11, 73); */
+  background: url("images/img1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.image-slider:nth-child(2) {
+  /* background-color: rgb(27, 220, 20); */
+  background: url("images/img2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.image-slider:nth-child(3) {
+  /* background-color: rgb(228, 50, 148); */
+  background: url("images/img3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.image-slider:nth-child(4) {
+  /* background-color: rgb(231, 216, 8); */
+  background: url("images/img4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.image-slider:nth-child(5) {
+  /* background-color: rgb(231, 216, 8); */
+  background: url("images/img1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Slider above text */
+.hero-text {
+  width: 100vw;
+  height: 90vh;
+  position: absolute;
+  background-color: rgba(5, 1, 22, 0.514);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+  text-align: center;
+  color: antiquewhite;
+  text-shadow: 3px 3px 8px black;
+  font-family: "Squada One", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 2px;
+  animation: jumbotron-animation2 5s;
+}
+.hero-text > p {
+  font-size: 0.53em;
+  animation: jumbotron-animation 5s;
+}
+
+/* Slider images */
+.slider-container {
+  height: 90vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.hero-slider {
+  display: flex;
+  width: 500%;
+  transition: 2s;
+  /* transform: translateX(-100vw); */
+}
+.hero-slider > .image-slider {
+  border: 2px solid rgb(252, 243, 228);
+}
+.logo {
+  position: absolute;
+  top: 4vh;
+  left: 10vw;
+}
+.navbar {
+  height: 15%;
+  width: 80%;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar > a > img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  transition: 1s;
+}
+.navbar > a > img:hover {
+  transition: 1s;
+  opacity: 0.9;
+}
+@keyframes jumbotron-animation {
+  0% {
+    transform: translateX(-200vw);
+    letter-spacing: 1em;
+    line-height: 200%;
+  }
+  20% {
+    transform: translateX(0);
+  }
+  40% {
+    letter-spacing: 0;
+  }
+  100% {
+    line-height: normal;
+  }
+}
+@keyframes jumbotron-animation2 {
+  0% {
+    letter-spacing: 2em;
+  }
+  20% {
+  }
+  40% {
+    letter-spacing: 0;
+  }
+  100% {
+  }
+}
+
+/* About Us */
+.container {
+  background-color: rgb(190, 176, 138);
+  width: 90vw;
+  height: 85vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.about-us {
+  width: 90%;
+  height: 70%;
+  font-size: 120%;
+  font-weight: 500;
+  font-family: "Bahnschrift Condensed", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  text-align: justify;
+  animation: enter 1s ease-in-out;
+}
+.about-us > span {
+  font-size: 1.7em;
+}
+.container > img {
+  width: 20vw;
+  height: 20vw;
+  border: 4px solid white;
+  box-shadow: 2px 2px 6px black;
+  position: absolute;
+  transition: 0.5s;
+  transform: translate(-90px, -270px) rotate(370deg);
+  animation: imageTransform 2s;
+  cursor: pointer;
+}
+.container > img:hover {
+  transition: 0.5s;
+  width: 30vh;
+  height: 30vh;
+  transform: translate(0px, 0px) rotate(370deg);
+}
+
+@keyframes imageTransform {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-90px, -270px) rotate(370deg);
+  }
+}
+#svg3336 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  animation: plane-intro 1s ease-in-out;
+}
+@keyframes plane-intro {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes enter {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Services styling */
+.service-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.indiv-service {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.service-pic-frame {
+  width: 40vw;
+  height: 40vw;
+  background-color: rgb(248, 240, 209);
+  box-shadow: -6px -6px 12px rgb(148, 148, 148);
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  animation: services-anim 1s;
+}
+
+.indiv-service:nth-child(1) > .service-pic-frame {
+  transition: 1s;
+  transform: translate(0px, 50px) rotate(350deg);
+}
+.indiv-service:nth-child(2) > .service-pic-frame {
+  transition: 1s;
+  transform: translate(-20px, 20px) rotate(370deg);
+}
+.indiv-service:nth-child(3) > .service-pic-frame {
+  transition: 1s;
+  transform: translate(10px, 0px) rotate(350deg);
+}
+.indiv-service:nth-child(4) > .service-pic-frame {
+  transition: 1s;
+  transform: translate(-10px, 10px) rotate(360deg);
+}
+@keyframes services-anim {
+  0% {
+    transform: translateX(200vw);
+  }
+  100% {
+    /* transform: translateX(0); */
+  }
+}
+.service-pic-frame > p {
+  font-size: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: rgb(68, 68, 68);
+}
+.service-pic-frame-control > .service-pics {
+  width: 20vw;
+  height: 20vw;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.service-pic-frame-control > button {
+  background-color: cornsilk;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: none;
+  font-weight: 900;
+  color: dimgray;
+  font-size: 1.5rem;
+  box-shadow: 0px 0px 5px grey;
+  position: absolute;
+  display: none;
+}
+.service-pic-frame:hover {
+  transition: 0.5s;
+  width: 45vw;
+  height: 45vw;
+}
+.service-pic-frame-control > .service-pics:hover {
+  transition: 0.5s;
+  width: 30vw;
+  height: 30vw;
+}
+.service-pic-frame-control > #prev1 {
+  top: 40%;
+  left: 0;
+}
+.service-pic-frame-control > #next1 {
+  top: 40%;
+  right: 0;
+}
+.service-pic-frame-control > .service-pics > .img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.img > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Contact part */
+/* Contact part */
+.contact-background {
+  background-image: url(images/img39.jpg);
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.5em;
+  margin-top: 3x0px;
+}
+
+.contact-background > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(240, 194, 125, 0.76);
+  width: 80vw;
+  height: 50%;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px black;
+  font-size: 1.5em;
+}
+.contact-background > div > h3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 10px;
+  color: rgb(46, 21, 5);
+  text-shadow: 0px 0px 3px white;
+  font-size: 1.5em;
+}
+.contact-background > div > h3 > img {
+  width: 10vw;
+  height: 10vw;
+}
+
+/* REEL part */
+/* Reel  */
+.full {
+  width: 80vw;
+  height: 86vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid whitesmoke;
+  box-shadow: 4px 4px 12px black;
+  margin-top: 20px;
+}
+.half {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.indiv-reel {
+  width: 100%;
+  height: 50%;
+  transition: 2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0.3;
+  position: relative;
+}
+.indiv-reel:hover {
+  height: 90%;
+  opacity: 1;
+}
+video {
+  transform: scale(0.15);
+}
+@media screen and (min-width: 768px) {
+  .hero-text {
+    font-size: 2em;
+  }
+  .hero-text > p {
+    font-size: 0.5em;
+  }
+  video {
+    transform: scale(0.3);
+  }
+}
+
+.cover-anim {
+  width: 70vw;
+  height: 100vh;
+  background-color: #412600;
+  box-shadow: 8px 8px 15px black, 50px 10px 5px #ca76009c;
+  position: absolute;
+  z-index: 5;
+  transition: 0.5s ease-in-out;
+  transform: translateX(-100vw);
+}
+#cover-anim-pos {
+  transition: 0.5s ease-in-out;
+  transform: translateX(100vw);
+}

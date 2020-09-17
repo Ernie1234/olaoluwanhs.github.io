@@ -1,0 +1,9 @@
+<div class="container contact-background">
+            <h2 style="background-color: darkgoldenrod; margin: 20px;">This contact information is for the creator of this website</h2>
+            <div>
+              <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Contact us today</h2>
+            <h3><img src="images/icons/001-facebook.png" alt=""> :facebook.com/olaoluwa.babatunde.16</h3>
+            <h3><img src="images/icons/004-twitter.png" alt=""> :twitter.com/newheavenstudi1</h3>
+            <h3><img src="images/icons/002-instagram.png" alt=""> :olaoluwanhs</h3>
+            </div>
+          </div>

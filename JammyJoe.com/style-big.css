@@ -1,0 +1,373 @@
+/* Image slider styling */
+.image-slider {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.image-slider:nth-child(1) {
+  /* background-color: rgb(21, 11, 73); */
+  background: url("images/img1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.image-slider:nth-child(2) {
+  /* background-color: rgb(27, 220, 20); */
+  background: url("images/img2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.image-slider:nth-child(3) {
+  /* background-color: rgb(228, 50, 148); */
+  background: url("images/img3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.image-slider:nth-child(4) {
+  /* background-color: rgb(231, 216, 8); */
+  background: url("images/img4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.image-slider:nth-child(5) {
+  /* background-color: rgb(231, 216, 8); */
+  background: url("images/img1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Slider above text */
+.hero-text {
+  width: 100vw;
+  height: 90vh;
+  position: absolute;
+  background-color: rgba(5, 1, 22, 0.514);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  color: antiquewhite;
+  text-shadow: 3px 3px 8px black;
+  font-family: "Squada One", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  animation: jumbotron-animation2 3s;
+}
+@keyframes jumbotron-animation2 {
+  0% {
+    letter-spacing: 2em;
+  }
+  20% {
+    letter-spacing: 1em;
+    font-size: 1rem;
+  }
+  40% {
+    letter-spacing: 0;
+    font-size: 2em;
+  }
+  100% {
+  }
+}
+
+/* Slider images */
+.slider-container {
+  height: 90vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.hero-slider {
+  display: flex;
+  width: 500%;
+  transition: 3s;
+  /* transform: translateX(-100vw); */
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  font-size: 1.4em;
+  letter-spacing: 3px;
+  text-align: center;
+  width: 1.3em;
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.navbar {
+  height: 100%;
+  position: absolute;
+  right: 50px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar > a > img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  transition: 1s;
+}
+.navbar > a > img:hover {
+  transition: 1s;
+  opacity: 0.9;
+}
+
+/* About Us */
+.container {
+  background-color: rgb(190, 176, 138);
+  width: 80vw;
+  height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.about-us {
+  width: 90%;
+  font-size: 160%;
+  font-family: "Bahnschrift Condensed", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+  text-align: justify;
+  animation: enter 1s ease-in-out;
+}
+.about-us > span {
+  font-size: 1.7em;
+}
+.container > img {
+  width: 20vh;
+  height: 20vh;
+  border: 4px solid white;
+  box-shadow: 2px 2px 6px black;
+  position: absolute;
+  transition: 0.5s;
+  transform: translate(-200px, -200px) rotate(370deg);
+  animation: imageTransform 2s;
+  cursor: pointer;
+}
+.container > img:hover {
+  transition: 0.5s;
+  width: 25vh;
+  height: 25vh;
+}
+@keyframes imageTransform {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-200px, -200px) rotate(370deg);
+  }
+}
+
+#svg3336 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  animation: plane-intro 1.5s ease-in-out;
+}
+@keyframes plane-intro {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes enter {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Services styling */
+.service-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.indiv-service {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* .indiv-service:nth-child(1) {
+  background-color: chocolate;
+}
+.indiv-service:nth-child(2) {
+  background-color: rgb(71, 35, 10);
+}
+.indiv-service:nth-child(3) {
+  background-color: rgb(30, 48, 210);
+}
+.indiv-service:nth-child(4) {
+  background-color: rgb(30, 210, 39);
+} */
+
+.service-pic-frame {
+  width: 40vh;
+  height: 40vh;
+  background-color: rgb(248, 240, 209);
+  box-shadow: -3px -3px 12px black;
+  transition: 2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.service-pic-frame:hover {
+  transition: 0.5s;
+  width: 45vh;
+  height: 45vh;
+}
+.indiv-service:nth-child(1) > .service-pic-frame {
+  transform: translate(0px, 50px) rotate(350deg);
+}
+.indiv-service:nth-child(2) > .service-pic-frame {
+  transform: translate(20px, 50px) rotate(400deg);
+}
+.indiv-service:nth-child(3) > .service-pic-frame {
+  transform: translate(-15px, 0px) rotate(370deg);
+}
+.indiv-service:nth-child(4) > .service-pic-frame {
+  transform: translate(-10px, 10px) rotate(360deg);
+}
+.service-pic-frame > p {
+  font-size: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: rgb(68, 68, 68);
+}
+.service-pic-frame-control > .service-pics {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.service-pic-frame-control > button {
+  background-color: cornsilk;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: none;
+  font-weight: 900;
+  color: dimgray;
+  font-size: 1.5rem;
+  box-shadow: 0px 0px 5px grey;
+  position: absolute;
+  display: none;
+}
+.service-pic-frame-control > #prev1 {
+  top: 40%;
+  left: 0;
+}
+.service-pic-frame-control > #next1 {
+  top: 40%;
+  right: 0;
+}
+.service-pic-frame-control > .service-pics > .img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.img > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Contact part */
+.contact-background {
+  background-image: url(images/img39.jpg);
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contact-background > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(240, 194, 125, 0.76);
+  height: 50%;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px black;
+}
+.contact-background > div > h3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 20px;
+  color: rgb(46, 21, 5);
+  text-shadow: 0px 0px 3px white;
+}
+.contact-background > div > h3 > img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Reel  */
+.full {
+  width: 80vw;
+  height: 80vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid whitesmoke;
+  box-shadow: 4px 4px 12px black;
+}
+.half {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.indiv-reel {
+  width: 50%;
+  height: 100%;
+  transition: 2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0.3;
+  position: relative;
+}
+.indiv-reel:hover {
+  width: 80%;
+  opacity: 1;
+}
+video {
+  transform: scale(0.3);
+}
+
+.cover-anim {
+  width: 70vw;
+  height: 100vh;
+  background-color: #412600;
+  box-shadow: 8px 8px 15px black, 50px 10px 5px #ca76009c;
+  position: absolute;
+  z-index: 5;
+  transition: 0.5s ease-in-out;
+  transform: translateX(-100vw);
+}
+#cover-anim-pos {
+  transition: 0.5s ease-in-out;
+  transform: translateX(100vw);
+}

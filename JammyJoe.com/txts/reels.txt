@@ -1,0 +1,26 @@
+
+
+   <div class="full">
+          <div class="half">
+          <div class="indiv-reel">
+           <video src="videos/home.mp4" loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+          </div>
+          <div class="indiv-reel">
+            <video src="videos/offices.mp4" loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+          
+          </div>
+        </div>
+        <div class="half">
+          <div class="indiv-reel">
+            <video src="videos/furniture.mp4" loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+          
+          </div>
+          <div class="indiv-reel">
+            <video src="videos/artistic.mp4" loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+          </div>
+        </div>
+        </div>
+
+
+         
+        </div>

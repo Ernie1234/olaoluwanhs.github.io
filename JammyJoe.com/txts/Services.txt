@@ -1,0 +1,66 @@
+        <div class="service-box">
+          
+
+          <div class="indiv-service">
+            <div class="service-pic-frame service-large">
+              <div class="service-pic-frame-control">
+              <button id="prev1"><</button>
+              <div class="service-pics">
+            <div class="img">
+                <img src="images/img35.jpg" alt="home" >
+                <img src="images/img38.jpg" alt="home">
+                <img src="images/img8.jpg" alt="home">
+               </div>
+              </div>
+              <button id="next1">></button>
+             </div>
+              <p>Home</p>
+            </div>
+          </div>
+          <div class="indiv-service">
+            <div class="service-pic-frame">
+              <div class="service-pic-frame-control">
+              <button id="prev2"><</button>
+              <div class="service-pics">
+            <div class="img"><img src="images/img31.jpg" alt="home">
+                <img src="images/img24.jpg" alt="home">
+                <img src="images/img26.jpg" alt="home">
+               </div>
+              </div>
+              <button id="next2">></button>
+             </div>
+              <p>Office</p>
+            </div>
+          </div>
+          <div class="indiv-service">
+            <div class="service-pic-frame">
+              <div class="service-pic-frame-control">
+              <button id="prev1"><</button>
+              <div class="service-pics">
+            <div class="img"><img src="images/img33.jpg" alt="home">
+                <img src="images/img35.jpg" alt="home">
+                <img src="images/img20.jpg" alt="">
+               </div>
+              </div>
+              <button id="next1">></button>
+             </div>
+              <p>Furnitures</p>
+            </div>
+          </div>
+          <div class="indiv-service">
+            <div class="service-pic-frame">
+              <div class="service-pic-frame-control">
+              <button id="prev1"><</button>
+              <div class="service-pics">
+            <div class="img"><img src="images/img22.jpg" alt="home">
+                <img src="images/img42.jpg" alt="home">
+                <img src="images/img10.jpg" alt="home">
+               </div>
+              </div>
+              <button id="next1">></button>
+             </div>
+              <p>Artistic</p>
+            </div>
+          </div>
+          
+        </div>
