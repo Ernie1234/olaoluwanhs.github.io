@@ -27,7 +27,7 @@ function loadText(section) {
 }
 
 window.addEventListener("load", function () {
-  loadText("txts/About us.txt");
+  loadText("https://olaoluwanhs.github.io/JammyJoe.com/txts/reels.txt");
 });
 
 // loadText("txts/reels.txt");
@@ -35,17 +35,17 @@ var navLinks = document.documentElement.querySelectorAll(
   ".service-options>span"
 );
 navLinks[0].addEventListener("click", function () {
-  loadText("txts/About us.txt");
+  loadText("https://olaoluwanhs.github.io/JammyJoe.com/txts/reels.txt");
   changeSectionAnim();
 });
 navLinks[1].addEventListener("click", function () {
-  loadText("txts/Services.txt");
+  loadText("https://olaoluwanhs.github.io/JammyJoe.com/txts/reels.txt");
 });
 navLinks[2].addEventListener("click", function () {
-  loadText("txts/reels.txt");
+  loadText("https://olaoluwanhs.github.io/JammyJoe.com/txts/reels.txt");
 });
 navLinks[3].addEventListener("click", function () {
-  loadText("txts/contact-page.txt");
+  loadText("https://olaoluwanhs.github.io/JammyJoe.com/txts/reels.txt");
 });
 var coverAnim = document.documentElement.querySelector(".cover-anim");
 
