@@ -82,6 +82,9 @@
   transition: 3s;
   /* transform: translateX(-100vw); */
 }
+.image-slider {
+  border: 2px solid whitesmoke;
+}
 .logo {
   position: absolute;
   top: 30px;
@@ -154,6 +157,7 @@
   transition: 0.5s;
   width: 25vh;
   height: 25vh;
+  transform: translate(-150px, -200px) rotate(360deg);
 }
 @keyframes imageTransform {
   0% {
@@ -228,6 +232,7 @@
   align-items: center;
   justify-content: space-evenly;
   cursor: pointer;
+  animation: services-anim 1s;
 }
 .service-pic-frame:hover {
   transition: 0.5s;
@@ -245,6 +250,14 @@
 }
 .indiv-service:nth-child(4) > .service-pic-frame {
   transform: translate(-10px, 10px) rotate(360deg);
+}
+@keyframes services-anim {
+  0% {
+    transform: translateX(200vw);
+  }
+  100% {
+    /* transform: translateX(0); */
+  }
 }
 .service-pic-frame > p {
   font-size: 1.5em;
